@@ -1,0 +1,82 @@
+Scene {
+	Camera {
+		Origin { 50.0 10.0 0.0 }
+		Rotation { 0.0 179.0 }
+	}
+	Object {
+		Type { Plane }
+		Inter {
+			Plane { }
+			Rotation { 0.0 0.0 90.0 }
+			Origin { -20.0 0.0 0.0 }
+		}
+		Ambient { 0.1 }
+		Specular { 0.8 }
+		Phong { 80 }
+		Color { 0 0 255 255 }
+	}
+	Object {
+		Type { Plane }
+		Inter {
+			Plane { }
+		}
+		Ambient { 0.1 }
+		Specular { 0.9 }
+		Phong { 80 }
+		Color { 128 128 128 255 }
+	}
+	Object {
+		Type { Sphere }
+		Inter {
+			Sphere { 3.0 }
+			Origin { 5.0 2.5 15.5}
+		}
+		Ambient { 0.1 }
+		Specular { 0.8 }
+		Phong { 80 }
+		Color { 255 0 0 255 }
+	}
+	Object {
+		Type { Sphere }
+		Inter {
+			Sphere { 3.0 }
+			Origin { 5.0 2.5 -15.5 }
+		}
+		Ambient { 0.1 }
+		Specular { 0.8 }
+		Phong { 80 }
+		Color { 0 255 0 255 }
+	}
+	Object {
+		Type { Cylinder }
+		Inter {
+			Cylinder { 3.0 0.0 }
+			Origin { 0.0 10.0 0.0 }
+			Rotation { -45.0 0.0 0.0 }
+		}
+		Ambient { 0.1 }
+		Specular { 0.5 }
+		Phong { 80 }
+		Color { 255 105 180 255 }
+	}
+	Object {
+		Type { Cone }
+		Inter {
+			Cone { 30.0 0.0 0.0 }
+			Origin { 0.0 5.0 -7.5 }
+			Rotation { 45.0 0.0 0.0 }
+		}
+		Ambient { 0.1 }
+		Specular { 0.5 }
+		Phong { 80 }
+		Color { 255 253 119 255 }
+	}
+	Light {
+		Origin { 30.0 20.0 -10.0 }
+		Radius { 0.0 }
+	}
+	Light {
+		Origin { 30.0 20.0 30.0 }
+		Radius { 0.0 }
+	}
+}

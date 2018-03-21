@@ -1,0 +1,36 @@
+Scene {
+	Camera {
+		Origin { 50.0 10.0 0.0 }
+		Rotation { 0.0 179.0 }
+	}
+	Object {
+		Type { Plane }
+		Inter {
+			Plane { }
+		}
+		Ambient { 0.1 }
+		Specular { 0.3 }
+		Phong { 180 }
+		Color { 255 255 255 255 }
+	}
+	Object {
+		Type { Sphere }
+		Inter {
+			Origin { 0.0 10.0 0.0 }
+			Sphere { 5.0 }
+		}
+		Ambient { 0.1 }
+		Specular { 0.4 }
+		Phong { 260 }
+		Color { 255 180 255 255 }
+	}
+	Light {
+		Origin { 20.0 40.0 0.0 }
+	}
+	Light {
+		Origin { 20.0 40.0 -20.0 }
+	}
+	Light {
+		Origin { 20.0 40.0 -40.0 }
+	}
+}
