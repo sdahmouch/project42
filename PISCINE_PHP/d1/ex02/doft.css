@@ -1,0 +1,150 @@
+body{
+	background-color: #505050; 
+	margin: 0 auto; 
+	width: 75%; 
+	font-size: 1vw; 
+	font-family: monospace;
+}
+.titre{
+	width: 28%; 
+	padding: 0.5vw;
+}
+.loupe{
+	width: 17%;	
+	position: absolute;	
+	bottom: -14%; 
+	right: 1.8vw;
+}
+.recharger{
+	width: 1.5%;
+	position:absolute; 
+	top: 5px;
+	right: 5px
+}
+.fermer{
+	width: 1.5%; 
+	position:absolute; 
+	bottom: 5px;
+	right: 5px
+}
+.contenta{
+	margin: 0 auto; 
+	width: 100%
+}
+.regarder{
+	border: 0.3vw solid red;
+	padding: 0px!important; 
+	border-radius: 10px;
+}
+.hidden{
+	visibility: hidden;
+}
+.cluster{
+	box-sizing: border-box; 
+	width: 100%;
+	overflow: hidden;
+	z-index: -1; 
+	border: 10px solid #909090;
+	box-shadow: 10px 10px rgba(0,0,0,0.8);
+	border-radius: 10px;
+}
+.green{
+	width: 36%;
+	background: #85FF8C;
+	padding: 0.5vw 0.5vw 2.8vw 0.5vw;
+	margin-top: -4vw;
+	margin-left: -3vw;
+	border-radius: 10px;
+	position: absolute;
+	z-index: 999999;
+	box-shadow: 10px 10px rgba(0,0,0,0.8);
+}
+p{
+	margin-top: 0.1vw;
+	margin-bottom: 0.1vw;
+	font-size: 0.75vw;
+	line-height: 0.9vw;
+}
+p:nth-child(2){
+	font-style: italic;
+}
+.entrer{
+	font-size: 1.3vw;
+}
+.ordinateur{
+	text-shadow: 0.2vw 0.2vw 0.4vw red;
+}
+input[type=text]{
+	width: 80%;
+	font-size: 0.7vw;
+}
+button{
+	width: 15%;
+	font-size: 0.7vw;
+}
+header{
+	width: 100%;
+	background-color: #909090;
+	margin: 20px auto;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0.5vw 0.5vw rgba(0,0,0,0.8);
+}
+.img{
+	margin: 0 auto;
+	width: 58%;
+	display: block;
+	padding: 5px 0 5px 0;
+}
+.contenta{
+	width: 100%;
+	position: relative;
+}
+.gauche { 
+	position: absolute; 
+	left: 2vw; 
+	width: 9%; 
+	background: #909090;
+    border-radius: 10px;
+    padding: 0.8vw 0 1.5vw 0;
+    box-shadow: 0.5vw 0.5vw rgba(0,0,0,0.8);
+} 
+.brick
+{
+	width: 4.7vw;
+	transform: scale(1.24);
+	height: 2.8vw;
+	background-image: url(./resources/brick.jpg);
+	margin-top: 20px;
+}
+.centre { 
+	margin: 0 14% 0 14%; 
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: -9999999;
+	width: 72%;
+	box-shadow: 0.5vw 0.2vw rgba(0,0,0,0.8);
+} 
+.droite { 
+	position: absolute; 
+	right: 2vw; 
+	width: 9%;
+	background: #909090;
+	border-radius: 10px;
+	padding: 0.8vw 0 1.5vw 0;
+	box-shadow: 0.5vw 0.5vw rgba(0,0,0,0.8);
+} 
+.chaise{
+	position: absolute;
+	width: 10vw; 
+	height: 12vw; 
+	margin-top: -14vw; 
+	margin-left: 15.5vw;
+}
+.apple{
+	position: absolute; 
+	width: 10vw; 
+	height: 8vw; 
+	margin-top: -14vw; 
+	margin-left: 42.1vw;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+	<title> balloon </title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	</head>
+<body>
+	<div class ="ballon" id ="ballon" onclick="clicballon()" onmouseleave="leaveballon()" style="margin: auto; width: 200px; height: 200px; background-color: red; border-radius: 50%; cursor: pointer;"></div>
+    
+        <script type="text/javascript">
+        var size = 200;
+        var ballon;
+        var i = 0;
+        $(document).ready(function()
+        {
+            ballon = $('#ballon');
+            ballon.click(clicballon);
+            ballon.mouseleave(leaveballon);
+        })
+        function clicballon()
+        {
+            size += 10;
+            i++;
+            if (size >= 420)
+            {
+                i = 0;
+                size = 200;
+            }
+            ballon.css('height', size);
+            ballon.css('width', size);
+            if (i % 3 == 0)
+            {
+                ballon.css('background-color', 'red');
+            }
+            else if (i % 3 == 1)
+            {
+                ballon.css('background-color', 'green');
+            }
+            else
+            {
+                ballon.css('background-color', 'blue');
+            }
+        }
+                function leaveballon()
+        {
+            size -= 5;
+            i--;
+            if (size <= 200)
+            {
+                i = 0;
+                size = 200;
+            }
+            ballon.css('height', size);
+            ballon.css('width', size);
+            if (i % 3 == 0)
+            {
+                ballon.css('background-color', 'red');
+            }
+            else if (i % 3 == 1)
+            {
+                ballon.css('background-color', 'green');
+            }
+            else
+            {
+                ballon.css('background-color', 'blue');
+            }
+        }
+        </script>
+	</body>
+</html>

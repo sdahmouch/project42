@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Connexion</title>
+</head>
+<body  style= "text-align: center">
+	<form method="post" action = "admin.php" class="box">
+		Identifiant: <input type="text" name ="login" value="" autofocus/>
+		<BR />
+		Mot de passe: <input type="password" name ="passwd" value = ""/>
+		<BR />
+		<BR />
+		<input type="submit" name="submit" value="Se connecter"/>
+		</form>
+	<form method="post" action="./index.php">
+		<input type="submit" name="submit" value="Page d'accueil">
+	</form>
+</div>	
+</body>
+</html>
+
+
+<style type="text/css">
+body
+{
+  margin:0px;
+  padding:0px;
+   font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(#9E9C31 0%, black 60%);;
+  background-size: cover;
+  color:#fff;
+  font-weight:300;
+ /* overflow: hidden;*/
+}
+.box{
+	border: 10px solid #fff;
+	width: 25%;
+	margin: 100px auto;
+	border-radius: 10px;
+	line-height: 30px;
+	font-size: 20px;
+}
+input{
+	height: 20px;
+}
+input[type="submit"]{
+ cursor:pointer;
+ height: 50px!important;
+     font-size: 50px!important;
+}
+</style>

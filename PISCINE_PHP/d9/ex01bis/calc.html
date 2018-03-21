@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+       <title>Calculatrice</title>
+          <meta charset="utf-8">
+          <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <input type="text" id="gauche">                                         
+    <select id="valeur">                                            
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+         <option value="%">%</option>
+    </select> 
+    <input type="text" id="droite">  
+    <input type="submit" value="Try me!" onclick="result()"> 	
+
+      <script type="text/javascript">
+        $(document).ready(function()
+        {
+          setInterval("alert('Please, use me...')", 30000);
+        })     
+        
+        function result() { 
+          getResult($('#gauche').val(), $('#droite').val(), $('#valeur').val()); 
+          function getResult(a, b, operateur) {
+                if (a >= 0 && b >= 0){
+                  if (operateur == '+') { 
+                  var value = parseFloat(a) + parseFloat(b);
+                  alert(value);
+                  console.log(value);
+                  }
+                  else if (operateur == '-') { 
+                      var value = parseFloat(a) - parseFloat(b);
+                      alert(value);
+                      console.log(value);
+                  }
+                  else if (operateur == '/') {                      
+                      if (a == 0 || b == 0)
+                      {
+                        alert("It's over 9000");
+                        console.log("It's over 9000");
+                    }
+                    else {
+                    var value = parseFloat(a) / parseFloat(b);
+                      alert(value);
+                      console.log(value);
+                    }
+                  }
+                  else if (operateur == '*') { 
+                      var value = parseFloat(a) * parseFloat(b);
+                      alert(value);
+                      console.log(value);
+                  }
+                  else if (operateur == '%') { 
+                    if (a == 0 || b == 0)
+                      {
+                        alert("It's over 9000");
+                        console.log("It's over 9000");
+                      } 
+                      else{                     
+                      var value = parseFloat(a) % parseFloat(b);
+                      alert(value);
+                      console.log(value);
+                      }                   
+                  }          
+              }
+              else {
+                alert("Error");
+                console.log('Error');
+              }
+          } 
+        } 
+          </script> 
+   </body>
+</html>

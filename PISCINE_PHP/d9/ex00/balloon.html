@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+	<title>balloon</title>    
+	</head>
+    <body>
+	<div class ="ballon" id ="ballon" onclick="clicballon()" onmouseleave="leaveballon()" style="margin: auto; width: 200px; height: 200px; background-color: red; border-radius: 50%; cursor: pointer;"></div>
+    
+    <script type="text/javascript">
+        var size = 200;
+        var ballon = document.querySelector('.ballon');
+        var i = 0;
+        function clicballon()
+        {
+            size += 10;
+            i = i + 1;
+            if (size >= 420)
+            {
+                i = 0;
+                size = 200;
+            }
+            ballon.style.height = size + 'px';
+            ballon.style.width = size + 'px';
+            if (i % 3 == 1)
+            {
+                ballon.style.backgroundColor = "green";
+            }
+            else if (i % 3 == 2)
+            {
+                ballon.style.backgroundColor = "blue";
+            }
+            else 
+            {
+                ballon.style.backgroundColor = "red";
+            }
+        }
+              function leaveballon()
+        {
+            size -= 5;
+            i = i - 1;
+            if (size <= 200)
+            {
+                i = 0;
+                size = 200;
+            }
+            ballon.style.height = size + 'px';
+            ballon.style.width = size + 'px';
+            if (i % 3 == 0)
+            {
+                ballon.style.backgroundColor = 'red';
+            }
+            else if (i % 3 == 1)
+            {
+                ballon.style.backgroundColor = 'green';
+            }
+            else
+            {
+                ballon.style.backgroundColor = 'blue';
+            }
+        }
+        </script>
+	</body>
+</html>
